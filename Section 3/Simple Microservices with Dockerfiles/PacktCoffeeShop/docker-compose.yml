@@ -1,0 +1,23 @@
+## Starts all microservices
+---
+version: "3"
+services:
+    customer:
+        container_name: "customer"
+        image: vasouv/packtcustomer
+        ports:
+            - "8085:8080"
+    order:
+        container_name: "order"
+        image: vasouv/packtorder
+        ports:
+            - "8086:8080"
+    aggregator:
+        container_name: "aggregator"
+        image: vasouv/packtservice
+        depends_on:
+            - customer
+            - order
+        ports:
+            - "8087:8080"
+            

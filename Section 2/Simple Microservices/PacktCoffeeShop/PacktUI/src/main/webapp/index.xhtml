@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Coffee with Microservices</title>
+    </h:head>
+
+    <h:body>
+        <h1>Coffee with Microservices</h1>
+        <h:form>
+            <p:panel header="New Order" style="margin-bottom:20px">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <p:outputLabel for="cName" value="Customer's Name:"/>
+                    <p:inputText id="cName" value="#{coffeeController.customerName}"/>
+                    <p:outputLabel for="cEmail" value="Customer's Email:"/>
+                    <p:inputText id="cEmail" value="#{coffeeController.customerEmail}"/>
+                    <p:outputLabel for="coffee" value="Select Coffee:"/>
+                    <p:selectOneRadio id="coffee" value="#{coffeeController.customerCoffee}">
+                        <f:selectItem itemLabel="Greek" itemValue="Greek" />
+                        <f:selectItem itemLabel="Espresso" itemValue="Espresso" />
+                        <f:selectItem itemLabel="Filtered" itemValue="Filtered" />
+                    </p:selectOneRadio>
+                    <p:commandButton action="#{coffeeController.placeOrder}" value="Place Order" update="cof"/>
+                </h:panelGrid>
+            </p:panel>
+            <p:panel header="Placed Orders" style="margin-bottom: 20px">
+                <p:dataTable id="cof" value="#{coffeeController.orders}" var="coffee">
+                    <p:column headerText="Customer Name">
+                        #{coffee.customerName}
+                    </p:column>
+                    <p:column headerText="Customer Email">
+                        #{coffee.customerEmail}
+                    </p:column>
+                    <p:column headerText="Coffee">
+                        #{coffee.coffeeName}
+                    </p:column>
+                    <p:column headerText="Price">
+                        #{coffee.coffeePrice}
+                    </p:column>
+                </p:dataTable>
+            </p:panel>
+        </h:form>
+    </h:body>
+
+</html>
+

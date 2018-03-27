@@ -1,0 +1,10 @@
+REST Resources
+--------------
+
+localhost:8085/PacktCustomer/packt-customers/customers
+
+localhost:8086/PacktOrder/packt-orders/orders
+
+localhost:8087/PacktService/packt-service/serve
+
+localhost:8089/PacktUI
