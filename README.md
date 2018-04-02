@@ -19,8 +19,7 @@ Finally, you’ll learn how to deploy the application on the AWS and Azure platf
 <LI><SPAN id=what_you_will_learn_c class=sugar_field>Create an account on AWS and deploy a container</SPAN>
 <LI><SPAN id=what_you_will_learn_c class=sugar_field>Add load balancing for high availability</SPAN>
 <LI><SPAN id=what_you_will_learn_c class=sugar_field>Deploy containers on Microsoft’s platform Azure</SPAN>
-				
-	</LI></UL></DIV>
+				</LI></UL></DIV>
 
 
 ## Instructions and Navigation
