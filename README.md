@@ -7,6 +7,20 @@ Then you’ll learn how you can build microservices in Java EE using REST APIs i
 
 Finally, you’ll learn how to deploy the application on the AWS and Azure platforms, and we will end the course by discussing some concepts and techniques around troubleshooting problems that might occur with applications after you’ve written them.
 
+<H2>What You Will Learn</H2>
+<DIV class=book-info-will-learn-text>
+<UL>
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Find out about the cloud-native architecture</SPAN> 
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Use MicroProfile and Payara Micro to build independent REST services</SPAN> 
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Create a JSF interface that aggregates the services</SPAN> 
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Secure the application and check how it performs under load</SPAN> 
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Set up Jenkins to continuously build your project</SPAN> 
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Dockerize the microservices in preparation for cloud deployment</SPAN>
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Create an account on AWS and deploy a container</SPAN>
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Add load balancing for high availability</SPAN>
+<LI><SPAN id=what_you_will_learn_c class=sugar_field>Deploy containers on Microsoft’s platform Azure</SPAN>
+				
+	</LI></UL></DIV>
 
 
 ## Instructions and Navigation
